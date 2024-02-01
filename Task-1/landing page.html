@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/R/4WpqQ1T4uF5Y4z4nBoqq46fDHA86t9R0tZ" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color:#112a3f;
+            color: #333;
+            transition: background-color 0.5s ease; 
+        }
+
+        header {
+            background-color:#222;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            transition: background-color 0.5s ease; 
+        }
+
+        .property-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .property-card {
+            max-width: 300px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .property-card:hover {
+            transform: scale(1.05);
+        }
+
+        .property-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .property-details {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        ul li i {
+            margin-right: 8px;
+            color: #4CAF50;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+    <title>Real Estate Listings</title>
+</head>
+<body>
+    <header>
+        <h1>Discover Your Dream Home</h1>
+    </header>
+    <div class="property-container">
+        <div class="property-card">
+            <img class="property-image" src="a.jpg" alt="Property 1 Image">
+            <div class="property-details">
+                <h2>Modern 3-Bedroom Apartment</h2>
+                <ul>
+                    <li><i class="fas fa-bed"></i> 3 Bedrooms</li>
+                    <li><i class="fas fa-bath"></i> 2 Bathrooms</li>
+                    <li><i class="fas fa-expand"></i> 150 sqm</li>
+                    <li><i class="fas fa-car"></i> Parking Available</li>
+                </ul>
+                <button onclick="alert('Thank you for your interest!')">Contact Agent</button>
+            </div>
+        </div>
+
+       
+        <div class="property-card">
+            <img class="property-image" src="b.jpg" alt="Property 2 Image">
+            <div class="property-details">
+                <h2>Luxurious 5-Bedroom Mansion</h2>
+                <ul>
+                    <li><i class="fas fa-bed"></i> 5 Bedrooms</li>
+                    <li><i class="fas fa-bath"></i> 4 Bathrooms</li>
+                    <li><i class="fas fa-expand"></i> 350 sqm</li>
+                    <li><i class="fas fa-car"></i> Covered Garage</li>
+                </ul>
+                <button onclick="alert('Thank you for your interest!')">Contact Agent</button>
+            </div>
+        </div>
+
+        
+        <div class="property-card">
+            <img class="property-image" src="c.jpg" alt="Property 3 Image">
+            <div class="property-details">
+                <h2>Stunning Beachfront Villa</h2>
+                <ul>
+                    <li><i class="fas fa-bed"></i> 4 Bedrooms</li>
+                    <li><i class="fas fa-bath"></i> 3 Bathrooms</li>
+                    <li><i class="fas fa-expand"></i> 280 sqm</li>
+                    <li><i class="fas fa-car"></i> Private Pool</li>
+                </ul>
+                <button onclick="alert('Thank you for your interest!')">Contact Agent</button>
+            </div>
+        </div>
+
+        
+        <div class="property-card">
+            <img class="property-image" src="d.jpg" alt="Property 4 Image">
+            <div class="property-details">
+                <h2>Charming Countryside Cottage</h2>
+                <ul>
+                    <li><i class="fas fa-bed"></i> 2 Bedrooms</li>
+                    <li><i class="fas fa-bath"></i> 1 Bathroom</li>
+                    <li><i class="fas fa-expand"></i> 120 sqm</li>
+                    <li><i class="fas fa-car"></i> Garden</li>
+                </ul>
+                <button onclick="alert('Thank you for your interest!')">Contact Agent</button>
+            </div>
+        </div>
+ <div class="property-card">
+            <img class="property-image" src="c.jpg" alt="Property 4 Image">
+            <div class="property-details">
+                <h2>Charming Countryside Cottage</h2>
+                <ul>
+                    <li><i class="fas fa-bed"></i> 2 Bedrooms</li>
+                    <li><i class="fas fa-bath"></i> 1 Bathroom</li>
+                    <li><i class="fas fa-expand"></i> 120 sqm</li>
+                    <li><i class="fas fa-car"></i> Garden</li>
+                </ul>
+                <button onclick="alert('Thank you for your interest!')">Contact Agent</button>
+            </div>
+        </div>
+
+    </div>
+    <footer>&copy; 2024 Dream Homes Realty by Moses Iraianbu R.S. All rights reserved.</footer>
+</body>
+</html>
+
